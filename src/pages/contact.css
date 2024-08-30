@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input {
+  @apply h-[3rem] border border-[#8a888891] bg-white dark:bg-slate-900 text-[15px] dark:text-gray-300 placeholder:italic  focus:outline-none;
+}
+
+textarea {
+  @apply h-[8rem] border border-[#8a888891] bg-white dark:bg-slate-900 text-[15px]  dark:text-gray-300 placeholder:italic  focus:outline-none  resize-none;
+}

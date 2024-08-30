@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  #profile-img {
+    border-radius: 146px 96px 124px 101px;
+    -webkit-border-radius: 146px 96px 124px 101px;
+    -moz-border-radius: 146px 96px 124px 101px;
+    overflow: hidden;
+    position: relative;
+  }
+  .sidebar {
+    transform: translateX(-100vw); /* Hide the sidebar off-screen initially */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+  }
+
+  .sidebar.open {
+    transform: translateX(0); /* Move the sidebar to the visible position */
+  }
+  .img-pos {
+    object-fit: cover;
+    object-position: 40% 30%;
+  }
+}
